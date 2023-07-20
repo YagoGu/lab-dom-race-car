@@ -49,8 +49,9 @@ class Player {
             playerHitbox.top < obstacleHitbox.bottom &&
             playerHitbox.bottom > obstacleHitbox.top
         ) {
-
+            return true;
         }
+        else {return false;}
     }
 
 }
