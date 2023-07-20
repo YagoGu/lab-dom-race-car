@@ -24,7 +24,13 @@ class Player {
     move(){
         this.left += this.directionX;
         this.top += this.directionY;
-
+        
+        if(this.left < 0) {
+            this.left = 0
+        }
+        if(this.top < 0) {
+            this.top = 0
+        }
         if(this.left > this.gameScreen.offsetWidth - this.width){
             this.left = this.gameScreen.offsetWidth - this.width;
         }
