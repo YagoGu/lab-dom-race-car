@@ -6,8 +6,8 @@ class Game {
     this.gameEndScreen = document.getElementById("game-end");
     this.player =  new Player (
         this.gameScreen,
-        100,
-        100,
+        200,
+        500,
         100,
         150,
         "./images/car.png")
